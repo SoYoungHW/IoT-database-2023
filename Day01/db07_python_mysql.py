@@ -1,7 +1,7 @@
 # 파이썬에서 MYSQL 접근(연동)
 import pymysql
 
-# localhost 자기자신
+# localhost 자기자신 127.0.0.1
 conn = pymysql.connect(host='localhost', user='root', 
                           password='12345', db='homeplus', charset='utf8')
 
