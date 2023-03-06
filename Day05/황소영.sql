@@ -49,8 +49,8 @@ ROLLBACK;
 -- 5번 문제
 SELECT IFNULL(
 	   (SELECT Names 
-		FROM divtbl 
-        WHERE DIVISION = bb.Division), '--합계--') AS '장르'
+		  FROM divtbl 
+		 WHERE DIVISION = bb.Division), '--합계--') AS '장르'
 	, bb.장르별총합계
 FROM(
 		SELECT b.Division
